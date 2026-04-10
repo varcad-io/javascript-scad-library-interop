@@ -2,5 +2,5 @@
   "title": "JavaScript + SCAD Library Interop",
   "entryPath": "/index.js",
   "linkedLibraries": ["JSCAD Modeling", "justinsdk"],
-  "features": ["jscad", "justinsdk", "package-imports", "scad-library-interop"]
+  "features": ["jscad", "justinsdk", "package-imports", "scad-library-interop", "widgets"]
 }

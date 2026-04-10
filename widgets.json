@@ -1,0 +1,101 @@
+[
+  {
+    "type": "Section",
+    "name": "plate_settings",
+    "label": "Hex Plate",
+    "description": "Tune the JustinSDK hexagon plate before it is extruded in JSCAD"
+  },
+  {
+    "name": "hex_radius",
+    "type": "Slider",
+    "description": "Hexagon radius used by the base lattice",
+    "range": "1.6,6",
+    "defaultValue": "3.2"
+  },
+  {
+    "name": "hex_spacing",
+    "type": "Slider",
+    "description": "Spacing between hex cells in the base lattice",
+    "range": "0.2,1.8",
+    "defaultValue": "0.8"
+  },
+  {
+    "name": "hex_count",
+    "type": "Number",
+    "description": "Number of concentric hexagon rings in the plate",
+    "defaultValue": "3"
+  },
+  {
+    "name": "plate_height",
+    "type": "Slider",
+    "description": "Extrusion height of the hex plate",
+    "range": "1,8",
+    "defaultValue": "3"
+  },
+  {
+    "type": "Section",
+    "name": "crown_settings",
+    "label": "Starburst Crown",
+    "description": "Optional JustinSDK starburst centerpiece layered on top of the plate"
+  },
+  {
+    "name": "show_crown",
+    "type": "Checkbox",
+    "description": "Show the raised starburst crown",
+    "defaultValue": true
+  },
+  {
+    "name": "crown_outer_radius",
+    "type": "Slider",
+    "description": "Outer radius of the starburst crown",
+    "range": "4,18",
+    "defaultValue": "10",
+    "visibleWhen": {
+      "field": "show_crown",
+      "operator": "truthy"
+    }
+  },
+  {
+    "name": "crown_inner_radius",
+    "type": "Slider",
+    "description": "Inner radius of the starburst crown",
+    "range": "2,10",
+    "defaultValue": "5",
+    "visibleWhen": {
+      "field": "show_crown",
+      "operator": "truthy"
+    }
+  },
+  {
+    "name": "crown_points",
+    "type": "Number",
+    "description": "Point count used by the JustinSDK starburst helper",
+    "defaultValue": "6",
+    "visibleWhen": {
+      "field": "show_crown",
+      "operator": "truthy"
+    }
+  },
+  {
+    "name": "crown_height",
+    "type": "Slider",
+    "description": "Height parameter for the starburst crown",
+    "range": "2,12",
+    "defaultValue": "6",
+    "visibleWhen": {
+      "field": "show_crown",
+      "operator": "truthy"
+    }
+  },
+  {
+    "name": "crown_spin_deg",
+    "type": "Slider",
+    "description": "Rotate the starburst crown in place",
+    "range": "-180,180",
+    "defaultValue": "0",
+    "visibleWhen": {
+      "field": "show_crown",
+      "operator": "truthy"
+    }
+  }
+]
