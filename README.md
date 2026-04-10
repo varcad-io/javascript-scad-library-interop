@@ -10,3 +10,7 @@ Suggested linked libraries:
 
 - `JSCAD Modeling`
 - `justinsdk`
+
+Third-party notices:
+
+- See `THIRD_PARTY_NOTICES.md` for attribution and licensing information for dotSCAD / JustinSDK.
